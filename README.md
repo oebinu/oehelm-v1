@@ -14,3 +14,4 @@ helm repo add github-stable https://https://oebinu.github.io/oehelm-v1/
 
 helm repo index docs
 git commit -am "2024.01.09 Test Helm Repo(3)"
+git push

@@ -10,7 +10,7 @@ entries:
         url: https://argoproj.github.io/argo-helm/pgp_keys.asc
     apiVersion: v2
     appVersion: v2.9.3
-    created: "2024-01-09T15:10:25.841001-05:00"
+    created: "2024-01-09T15:35:25.440578-05:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -34,6 +34,6 @@ entries:
     - https://github.com/argoproj/argo-helm/tree/main/charts/argo-cd
     - https://github.com/argoproj/argo-cd
     urls:
-    - argo-cd-5.52.1.tgz
+    - https://oebinu.github.io/oehelm-v1/argo-cd-5.52.1.tgz
     version: 5.52.1
-generated: "2024-01-09T15:10:25.834084-05:00"
+generated: "2024-01-09T15:35:25.432373-05:00"
