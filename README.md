@@ -5,5 +5,7 @@ mkdir test
 helm pull argo/argo-cd
 mv argo-cd-5.52.1.tgz test
 helm repo index test
+git add ./
 git commit -am "2024.01.09 Test Helm Repo(1)"
 git push
+helm repo add github-stable https://https://oebinu.github.io/oehelm-v1/test
