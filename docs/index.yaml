@@ -10,7 +10,7 @@ entries:
         url: https://argoproj.github.io/argo-helm/pgp_keys.asc
     apiVersion: v2
     appVersion: v2.9.3
-    created: "2024-01-09T15:35:25.440578-05:00"
+    created: "2024-01-10T11:56:00.910494-05:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -36,4 +36,30 @@ entries:
     urls:
     - https://oebinu.github.io/oehelm-v1/argo-cd-5.52.1.tgz
     version: 5.52.1
-generated: "2024-01-09T15:35:25.432373-05:00"
+  oebinu-db:
+  - apiVersion: v1
+    created: "2024-01-10T11:56:00.911579-05:00"
+    description: A Helm chart to package your application container for Kubernetes
+    digest: 3a8bbceeaa50178bf1371ee4cb1286f5c1783496ca7759c3494091a44f9bfeb4
+    home: https://github.com/gruntwork-io/helm-kubernetes-services
+    maintainers:
+    - email: oebinu2021@gmail.com
+      name: oebinu
+    name: oebinu-db
+    urls:
+    - https://oebinu.github.io/oehelm-v1/oebinu-db-0.2.0.tgz
+    version: 0.2.0
+  oebinu-web:
+  - apiVersion: v1
+    created: "2024-01-10T11:56:00.91245-05:00"
+    description: A Helm chart to package your application container for Kubernetes
+    digest: 5bbd2c0bf8fffc38801c2d20797014b7ef9d04fecfe40fee2ba61e784971e1bc
+    home: https://github.com/gruntwork-io/helm-kubernetes-services
+    maintainers:
+    - email: oebinu2021@gmail.com
+      name: oebinu
+    name: oebinu-web
+    urls:
+    - https://oebinu.github.io/oehelm-v1/oebinu-web-0.2.0.tgz
+    version: 0.2.0
+generated: "2024-01-10T11:56:00.903147-05:00"

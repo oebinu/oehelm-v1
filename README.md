@@ -24,4 +24,8 @@ git push
 
 helm repo add oehelm https://oebinu.github.io/oehelm-v1/
 
+helm package oebinu-db 
+helm package oebinu-web 
+mv *.tgz ../docs
+
 
