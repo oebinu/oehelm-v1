@@ -38,3 +38,4 @@ helm repo remove oehelm
 helm repo add oehelm https://oebinu.github.io/oehelm-v1/
 
 
+helm package ../charts/oebinu-all
