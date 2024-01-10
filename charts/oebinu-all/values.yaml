@@ -5,13 +5,13 @@ applicationName: SAMPLE
 ###########################################
 #### Package No.1 : oebinu-web
 ###########################################
-fxc-web:
+oebinu-web:
   enabled: true
 
 ###########################################
 #### Package No.2 : oebinu-db
 ###########################################
-fxc-server:
+oebinu-db:
   enabled: true
 
 customResources:

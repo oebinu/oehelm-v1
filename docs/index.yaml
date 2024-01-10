@@ -10,7 +10,7 @@ entries:
         url: https://argoproj.github.io/argo-helm/pgp_keys.asc
     apiVersion: v2
     appVersion: v2.9.3
-    created: "2024-01-10T14:19:35.681836-05:00"
+    created: "2024-01-10T14:23:49.207333-05:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -38,7 +38,7 @@ entries:
     version: 5.52.1
   oebinu-db:
   - apiVersion: v1
-    created: "2024-01-10T14:19:35.683082-05:00"
+    created: "2024-01-10T14:23:49.208546-05:00"
     description: A Helm chart to package your application container for Kubernetes
     digest: 3a8bbceeaa50178bf1371ee4cb1286f5c1783496ca7759c3494091a44f9bfeb4
     home: https://github.com/gruntwork-io/helm-kubernetes-services
@@ -51,8 +51,26 @@ entries:
     version: 0.2.0
   oebinu-service:
   - apiVersion: v2
+    appVersion: v1.0.2
+    created: "2024-01-10T14:23:49.21341-05:00"
+    dependencies:
+    - condition: oebinu-web.enabled
+      name: oebinu-web
+      repository: https://oebinu.github.io/oehelm-v1/
+      version: 0.1.0
+    - condition: oebinu-db.enabled
+      name: oebinu-db
+      repository: https://oebinu.github.io/oehelm-v1/
+      version: 0.1.0
+    digest: ea77b9db88cf70c09dd60196521b01272015d5fc587bd4bae9a4b937beedbe75
+    name: oebinu-service
+    type: application
+    urls:
+    - https://oebinu.github.io/oehelm-v1/oebinu-service-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
     appVersion: v1.0.0
-    created: "2024-01-10T14:19:35.686353-05:00"
+    created: "2024-01-10T14:23:49.211999-05:00"
     dependencies:
     - condition: fxc-fxapi.enabled
       name: oebinu-web
@@ -70,7 +88,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2024-01-10T14:19:35.684893-05:00"
+    created: "2024-01-10T14:23:49.210248-05:00"
     dependencies:
     - condition: fxc-fxapi.enabled
       name: oebinu-web
@@ -88,7 +106,7 @@ entries:
     version: 0.1.0
   oebinu-web:
   - apiVersion: v1
-    created: "2024-01-10T14:19:35.687241-05:00"
+    created: "2024-01-10T14:23:49.214233-05:00"
     description: A Helm chart to package your application container for Kubernetes
     digest: 5bbd2c0bf8fffc38801c2d20797014b7ef9d04fecfe40fee2ba61e784971e1bc
     home: https://github.com/gruntwork-io/helm-kubernetes-services
@@ -99,4 +117,4 @@ entries:
     urls:
     - https://oebinu.github.io/oehelm-v1/oebinu-web-0.2.0.tgz
     version: 0.2.0
-generated: "2024-01-10T14:19:35.673697-05:00"
+generated: "2024-01-10T14:23:49.198431-05:00"
