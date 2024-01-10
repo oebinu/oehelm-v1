@@ -28,4 +28,10 @@ helm package oebinu-db
 helm package oebinu-web 
 mv *.tgz ../docs
 
+helm repo index docs --url https://oebinu.github.io/oehelm-v1/
+git add ./ && git commit -am "2024.01.10" && git push
 
+helm repo update
+helm search repo oehelm 
+helm repo remove oehelm 
+helm repo add oehelm https://oebinu.github.io/oehelm-v1/
