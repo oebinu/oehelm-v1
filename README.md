@@ -26,6 +26,7 @@ helm repo add oehelm https://oebinu.github.io/oehelm-v1/
 
 helm package oebinu-db 
 helm package oebinu-web 
+helm package oebinu-all
 mv *.tgz ../docs
 
 helm repo index docs --url https://oebinu.github.io/oehelm-v1/
@@ -35,3 +36,5 @@ helm repo update
 helm search repo oehelm 
 helm repo remove oehelm 
 helm repo add oehelm https://oebinu.github.io/oehelm-v1/
+
+
