@@ -17,8 +17,3 @@ dependencies:
   name: oebinu-db
   repository: https://oebinu.github.io/oehelm-v1/
   version: 0.2.0
-
-- name: redis-ha
-  version: 4.23.0
-  repository: https://dandydeveloper.github.io/charts/
-  condition: redis-ha.enabled
