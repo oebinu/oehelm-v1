@@ -1,0 +1,17 @@
+
+apiVersion: v2
+appVersion: v1.0.0
+name: oebinu-service
+type: application
+version: 0.1.0
+
+dependencies:
+- condition: fxc-fxapi.enabled
+  name: oebinu-web
+  repository: ./oebinu-web
+  version: 0.1.0
+  
+- condition: fxc-server.enabled
+  name: oebinu-db
+  repository: ./oebinu-db
+  version: 0.1.0
